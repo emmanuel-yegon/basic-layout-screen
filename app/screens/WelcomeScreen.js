@@ -22,20 +22,8 @@ export default function WelcomeScreen() {
           <Text>Sell what you don't need</Text>
         </View>
       </ImageBackground>
-      <View
-        style={{
-          backgroundColor: "#fc5c65",
-          width: "100%",
-          height: "10%",
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "#4ECDC4",
-          width: "100%",
-          height: "10%",
-        }}
-      />
+      <View style={styles.loginButton}></View>
+      <View style={styles.registerButton}></View>
     </View>
   );
 }
@@ -46,15 +34,25 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   backgroundImage: {
-    flex: 0.998,
+    flex: 1,
   },
   logo: {
-    width: 70,
-    height: 70,
+    width: 90,
+    height: 90,
   },
   logoView: {
-    top: 80,
+    top: 50,
     alignItems: "center",
     textDecorationStyle: "double",
+  },
+  loginButton: {
+    backgroundColor: "#fc5c65",
+    width: "100%",
+    height: "8%",
+  },
+  registerButton: {
+    backgroundColor: "#4ECDC4",
+    width: "100%",
+    height: "8%",
   },
 });
